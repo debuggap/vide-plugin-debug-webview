@@ -8,7 +8,7 @@ selenium-debug.log
 .eslintignore
 .eslintrc.js
 .postcssrc.js
-index.html
+/index.html
 src/
 build/
 config/
