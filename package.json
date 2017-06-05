@@ -1,6 +1,6 @@
 {
   "name": "vide-plugin-debug-webview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "debug webview",
   "author": "vic.wang",
   "scripts": {
