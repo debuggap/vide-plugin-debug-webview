@@ -1,0 +1,91 @@
+/*
+ * object view css
+ * ov is short for 'object view'
+*/
+.ov span{
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+    vertical-align: top;
+}
+.ov .ov-tl{
+    white-space:nowrap;
+}
+.ov .ov-tl.active{
+    background-color:rgb(56,121,217) ! important;
+}
+.ov .ov-tl.active span{
+    color:#fff;
+}
+.ov .ov-tl.active .ov-ele{
+    color:#fff;
+}
+.ov .ov-sp{
+    height:16px;
+}
+/* arrow close */
+.ov .ov-rt{
+	background:url(./images/icon1.png) 1px -94px;
+	width:16px;
+	height:16px;
+	display:inline-block;
+	-webkit-transition:-webkit-transform 0.5s;
+	-webkit-transform:rotate(0deg);
+}
+/* arrow open */
+.ov .ov-dn{
+    -webkit-transform:rotate(90deg);
+}
+
+.ov .ov-ele{
+    display:inline-block;
+    vertical-align:top;
+    color:rgb(136, 18, 128);
+}
+/* font color */
+.ov .ov-str{
+    color:rgb(196, 26, 22);
+}
+.ov .ov-num{
+    color:rgb(28, 0, 207);
+}
+.ov .ov-obj{
+    color:rgb(0,0,0);
+}
+.ov .ov-null{
+    color:gray;
+}
+.ov .ov-func{
+    color:#000;
+}
+.ov .ov-reg{
+    color:rgb(196, 26, 22);
+}
+.ov .ov-bool{
+    color:rgb(28, 0, 207);
+}
+.ov .ov-com{
+    color:rgb(35,110,37);
+}
+.ov .ov-text{
+    color:#000;
+}
+.ov .ov-doctype{
+    color:gray;
+}
+.ov .ov-key{
+    color:rgb(153, 69, 0);
+}
+.ov .ov-value{
+    color:rgb(26, 26, 166);
+}
+.ov .ov-element{
+    color:rgb(28, 0, 207);
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+/* dom hover */
+.ov-node div.ov-tl:hover{
+    background-color:rgb(234,241,251);
+}

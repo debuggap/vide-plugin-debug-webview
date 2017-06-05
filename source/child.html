@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/common.css" /> 
+
+  <link rel="stylesheet" type="text/css" href="css/child.css" />
+  <link rel="stylesheet" type="text/css" href="css/tree.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/search.css" />
+  <link rel="stylesheet" type="text/css" href="css/object_view.css" />
+
+  <script src="language/lan.js"></script>
+
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="js/jquery.tree.js"></script>
+  <!-- extend the jquery -->
+  <script src="js/extend.js"></script>
+  <script src="js/utility.js"></script>
+  <!-- js for different components -->
+  <script src="js/calculate_css.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/platform.js"></script>
+  <script src="js/globalEvent.js"></script>
+  <script src="js/child.js"></script>
+  <script src="js/prompt.js"></script>
+  <script src="js/css_prompt.js"></script>
+  <script src="js/head.js"></script>
+
+  <script src="js/element_job.js"></script>
+  <script src="js/object_view.js"></script>
+  <script src="js/element.js"></script>
+
+  <script src="js/network.js"></script>
+  <script src="js/source.js"></script>
+  <script src="js/resource.js"></script>
+  <script src="js/console.js"></script>
+  <!-- put the debugger here,in order to overwrite some function -->
+  <script src="js/debugger.js"></script>
+  <!--<script src="js/google_search.js"></script>-->
+  <!-- baidu analytics -->
+  <!--<script src="js/analytics/baidu.js"></script>-->
+  <!--  -->
+ </head>
+
+ <body>
+	<!-- head -->
+	<div class="head">
+		<span class="inspect"></span>
+		<ul>
+			<li class="active" targetId="elements">Elements</li><li targetId="network">Network</li><li targetId="resources">Resources</li><li targetId="sources">Sources</li><li targetId="console">Console</li>
+		</ul>
+	</div>
+
+	<!-- Elements -->
+	<div id="elements">
+		<div class="ov ele-block"><ul><li class="ov-root ov-node"></li></ul></div>
+		<div class="ele-css">
+		</div>
+	</div>
+	<!-- end Elements -->
+
+	<!-- Network -->
+	<div id="network" class="network">
+		<div class="filter">
+            <span class="f-clear"></span><input type="text" class="f-input" placeholder="Filter"/>
+            <span class="f-item f-active">All</span><span class="f-spe"></span><span class="f-item">Documents</span><span class="f-item">Styleheets</span><span class="f-item">Images</span>
+            <span class="f-item">Scripts</span><span class="f-item">XHR</span>
+		</div>
+        <table width="100%" cellspadding="0" cellspacing="0" class="net-title">
+            <thead>
+            <tr>
+                <th class="req-url"><div class="addr"><span>Name</span><span class="path">Path</span></div></th>
+                <th class="req-method">Method</th><th class="req-status">Status</th><th class="req-size">Size</th><th class="req-time">Time</th>
+            </tr>
+            </thead>
+        </table>
+        <div class="req-list">
+            <table width="100%" cellspadding="0" cellspacing="0" class="net-list">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="req-detail">
+            <div class="detail-head">
+                <a></a><ul><li class="active">Headers</li><li>Preview</li><li>Response</li></ul>
+            </div>
+            <div class="detail-headers"></div>
+            <div class="detail-preview">
+            </div>
+            <div class="detail-response"></div>
+        </div>
+	</div>
+	<!-- end network -->
+
+	<!-- Resources -->
+	<div id="resources">
+		<div class="left1">
+			<ul>
+				<li><a href="" targetId="localStorage" class="r-ls">Local Storage</a></li>
+				<li><a href="" targetId="sessionStorage" class="r-ss">Session Storage</a></li>
+				<li><a href="" targetId="cookie" class="r-c">Cookies</a></li>
+			</ul>
+		</div>
+		<div class="right1">
+			<div class="r1-wrap">
+				<table cellspacing=0 cellpadding=0 width=100%>
+				</table>
+				<div class="r-separate"></div>
+			</div>
+		</div>
+	</div>
+	<!-- end Resources -->
+
+	<!-- Sources -->
+	<div id="sources" class="sources">
+		<div id="sTabs">
+			<div class="show-tree"></div>
+			<ul class="s-ul"></ul>
+
+		</div>
+        <div id="valueWatch">
+			<div class="breakpoint-action">
+				<input type="button" class="resume" _value="resume">
+				<input type="button" class="step-over" _value="stepOver">
+				<input type="button" class="step-in" _value="stepInto">
+				<input type="button" class="step-out" _value="stepOut">
+				<input type="button" class="active" _value="setBreakpointsActive">
+			</div>
+
+			<div class="debug-item">
+				<div class="title"><span class="arrow"></span>Watch Expressions</div>
+				<div class="con watch">
+					<ul></ul>
+					<div><span class="span-right">></span><input type="text" class="watch-input-add" placeholder="add variable to watch" /></div>
+				</div>
+			</div>
+			<div class="debug-item">
+				<div class="title"><span class="arrow"></span>Call Stack</div>
+				<div class="con call-stack">
+				</div>
+			</div>
+			<div class="debug-item">
+				<div class="title"><span class="arrow"></span>Breakpoints</div>
+				<div class="con break-point"></div>
+			</div>
+
+			<div class="hideWatch">
+				<script>$.each(dgLanguage.singleStepError.split('<br/>'),function(a,b){document.write('<p>'+b+'</p>');});</script>
+			</div>
+        </div>
+		<div class="dock-tree">
+			<div class="tree-title">
+				<div class="hide-tree"></div>
+			</div>
+	        <div id="sTree"></div>
+        </div>
+	</div>
+	<!-- end Sources -->
+
+	<!-- Console -->
+	<div id="console" class="console">
+		<div class="filter">
+            <span class="f-clear"></span><input type="text" class="f-input" placeholder="Filter"/>
+            <span class="f-item f-active">All</span><span class="f-spe"></span><span class="f-item">Error</span><span class="f-item">Warning</span><span class="f-item">Log</span>
+		</div>
+ 		<div class="console-log">
+ 			<table width=100% cellspacing=0 cellpadding=0>
+ 				<tr><td class="left"><span class="span-right">></span></td><td><div class="console-input"></div></td></tr>
+ 			</table>
+ 		</div>
+ 		<div class="console-filter">
+ 		</div>
+	</div>
+	<!-- end Console -->
+
+	<!-- test -->
+
+ </body>  
+
+</html>

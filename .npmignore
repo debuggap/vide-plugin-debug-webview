@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+npm-debug.log
+yarn-error.log
+selenium-debug.log
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.js
+.postcssrc.js
+index.html
+src/
+build/
+config/
+static/
+test/

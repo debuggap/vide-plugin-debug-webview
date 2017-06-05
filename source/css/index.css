@@ -1,0 +1,142 @@
+h3{margin:10px;}
+
+.l-btn{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    background-color: #ccc;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    margin-left: -50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    opacity: 0;
+    -webkit-transition:opacity 0.5s;
+}
+
+.l-btn-show{
+    top: 510px;
+    opacity: 1;
+}
+
+.l-con{
+    width: 690px;
+    height: 390px;
+    position: absolute;
+    border: 5px solid #ccc;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10;
+    color: #fff;
+    padding: 5px 5px 100px;
+    overflow-y: scroll;
+    -webkit-user-select: none;
+}
+.l-con pre{
+    margin:0px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.l-console{
+    position: absolute;
+    width: 710px;
+    left: 50%;
+    margin-left: -355px;
+    top: 50%;
+    margin-top: -250px;
+    height:510px;
+    -webkit-transition: top 0.5s,-webkit-transform 1s;
+    -webkit-transition-timing-function: cubic-bezier(0,1,1,1)
+}
+
+.l-console-hide{
+    margin-top: 0px;
+    top: -510px;
+}
+.l-con-err{
+    color:red;
+}
+.l-btn-err{
+    -webkit-animation-name: 'btn-error';
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes 'btn-error'{
+    0% {
+        color:#000;
+    }
+
+    100% {
+        color:red;
+    }
+}
+
+.l-connect {
+    position: absolute;
+    width: 710px;
+    left: 50%;
+    margin-left: -355px;
+    top: 50%;
+    margin-top: -250px;
+    height: 260px;
+    -webkit-transition: top 0.5s;
+    text-align: center;
+    padding-top: 250px;
+    z-index: 11;
+    background: #fff;
+    font-size:20px;
+    border:5px solid transparent;
+    color: #0096d6;
+}
+
+.l-connect input{
+    height:24px;
+    font-size:inherit;
+}
+.l-connect .ip{
+    border: 1px solid #0096d6;
+    width: 170px;
+    padding: 0px 5px;
+    color:#0096d6;
+}
+
+.l-connect .port{
+    border: 1px solid #0096d6;
+    width: 80px;
+    padding: 0px 5px;
+    color:#0096d6;
+}
+.l-connect .connect{
+    border: 1px solid #0096d6;
+    height: 26px;
+    vertical-align: top;
+    outline: none;
+    cursor: pointer;
+    background-color: #0096d6;
+    color: #fff;
+    line-height: 20px;
+}
+
+.l-connect-action{
+    -webkit-transition:-webkit-transform 1s;
+    border:5px solid #ccc;
+    -webkit-transform: rotateY(90deg);
+}
+.l-console-action{
+    -webkit-transition-timing-function:ease;
+    -webkit-transform: rotateY(-90deg);
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color:rgb(50,50,50);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#ccc;
+    border-radius:5px;
+}

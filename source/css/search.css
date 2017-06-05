@@ -1,0 +1,92 @@
+.search_section{
+	height: 30px;
+	min-width: 200px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+.search_section .search_span{
+	text-align: center;
+	line-height: 27px;
+	display: inline-block;
+	width: 188px;
+	background: #fff;
+	height: 27px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.search_section .gsc-control-cse{
+	padding:0px;
+	border:none;
+}
+.search_section .gsc-control-cse:after{
+	content:""
+}
+.search_section .gsc-search-box{
+	width:200px;
+	background: rgb(223,223,223);
+}
+.search_section .gsc-search-button{
+	display:none;
+}
+.search_section div.gsst_b+a.gsst_a{
+	padding-top:5px;
+}
+
+.search_section .search_browser{
+	position: fixed;
+	z-index: 100003;
+	background:#ffffff;
+	-webkit-transform: rotateZ(-90deg);
+	-webkit-transition: -webkit-transform 0.5s;
+	-webkit-transform-origin: 50% 300%;
+}
+.search_section .search_head{
+	padding: 5px 20px;
+	height:20px;
+}
+
+.search_section .search_head span{
+	background: url(./images/search/nav_btn.png);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 20px;
+	cursor:pointer;
+}
+.search_section .search_head .mini_window{
+	background: url(./images/search/desc.gif) no-repeat;
+	width: 13px;
+	height: 15px;
+}
+.search_section .max_window{
+	position: fixed;
+	display: none;
+	background: url(./images/search/add.gif) no-repeat 10px center;
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 27px;
+	box-sizing: border-box;
+}
+.search_section .search_head .search_refresh{
+	background-position-x: -37px;
+}
+.search_section .search_head .search_load{
+	line-height: 18px;
+	background: url(./images/icons/indicator.gif) no-repeat;
+	display: inline-block;
+	height: 18px;
+	width: 16px;
+}
+.search_section .search_head .new_window{
+	float: right;
+	line-height: 20px;
+	background: url(./images/search/statusbarButtonGlyphs.png) -38px -26px;
+	display: inline-block;
+	height: 18px;
+	width: 20px;
+	margin-right: 20px;
+}
