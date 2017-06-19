@@ -8,7 +8,6 @@ $(document).ready(function(){
   });
 
 	//get version of DebugGap
-	document.title += " v"+manifest.version;
 	getIP(function(ip){
 		var nowTime = Math.ceil(new Date().getTime()/1000);
 		if( (nowTime < localStorage.hostExpired) && localStorage.host && localStorage.port && (localStorage.previousIP == ip) ){
